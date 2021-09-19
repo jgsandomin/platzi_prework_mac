@@ -18,5 +18,6 @@ def sum (a,b):
     print("Two numbers are added")
     result = a + b
     return result
+
 summation = sum (1,4)
 print(summation)
