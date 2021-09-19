@@ -1,3 +1,11 @@
+def converter(currency_type, dollar_value):
+    pesos = input ("How many" + currency_type + "do you have?: ")
+    pesos = float(pesos)
+    dolars = pesos / dollar_value
+    dolars = round(dolars, 2)
+    dolars = str(dolars)
+    print("You have $" + dolars + " dolars")
+
 menu = """"
 
 This is a currency conversor 
@@ -13,28 +21,10 @@ Please select an option
 option = int(input(menu))
 
 if option == 1:
-    pesos = input ("How many colombian pesos do you have?: ")
-    pesos = float(pesos)
-    dolar_value = 3875
-    dolars = pesos / dolar_value
-    dolars = round(dolars, 2)
-    dolars = str(dolars)
-    print("You have $" + dolars + " dolars")
+    converter("colombianos",3875)
 elif option == 2:
-    pesos = input ("How many argentine pesos do you have?: ")
-    pesos = float(pesos)
-    dolar_value = 98
-    dolars = pesos / dolar_value
-    dolars = round(dolars, 2)
-    dolars = str(dolars)
-    print("You have $" + dolars + " dolars")
+    converter("argentinos",98)
 elif option == 3:
-    pesos = input ("How many mexican pesos do you have?: ")
-    pesos = float(pesos)
-    dolar_value = 20
-    dolars = pesos / dolar_value
-    dolars = round(dolars, 2)
-    dolars = str(dolars)
-    print("You have $" + dolars + " dolars")
+    converter("mexicanos",24)
 else:
     print ("Enter a valid option")
